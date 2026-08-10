@@ -1,0 +1,14 @@
+{
+  "name": "WAM Instructor Lab · No-Notes Certification",
+  "short_name": "WAM Lab",
+  "description": "Six-hour active instructor training for the Working Actor Masterclass curriculum.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0b0d",
+  "theme_color": "#0b0b0d",
+  "icons": [
+    {"src":"./assets/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"./assets/icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
