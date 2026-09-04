@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  command = "bash colby-deploy.sh"
+  publish = "colby-dist/colby-trainer"
 
 [[headers]]
   for = "/*"
@@ -7,7 +8,7 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(self), microphone=(self)"
-    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' https:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
 
 [[headers]]
   for = "/sw.js"
